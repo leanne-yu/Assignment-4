@@ -1,19 +1,9 @@
 <script setup>
   import { ref } from "vue"
-  const movie = ref("null")
+  const data = ref(null)
 </script>
 
 <template>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titan One">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka One">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-</head>
 <body>
     <div class="container">
     <div class="header">Pick A Movie!</div>
@@ -30,7 +20,7 @@
             <option value = "2109">Rush Hour</option>
             <option value = "129">Spirited Away</option>
         </select>
-        <input id=get type="button" value="Get">
+        <button @click="response">get</button>
     </div>
         <div id="div1"></div>
     </div>
