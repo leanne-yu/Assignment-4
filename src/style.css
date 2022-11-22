@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(213, 213, 255);
+  }
+  .header{
+    font-size: 26px;
+    font-family: "Fredoka One", sans-serif, system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    padding: 15px;
+    color: rgb(114, 112, 255);
+  }
+  .select{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: 22%;
+    margin-right: 22%;
+    font-family: "Lato", sans-serif, system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(127, 125, 255);
+    font-size: 18px;
+  }
+  h1 {
+    text-align: center;
+    font-family: "Titan One", sans-serif, system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(127, 125, 255);
+    font-size: 45px;
+    font-weight: lighter;
+  }
+  p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: "Lato", sans-serif, system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(85, 82, 248);
+    margin-left: 22%;
+    margin-right: 22%;
+  }
+  #div1 > #img1{
+    display: flex;
+    justify-content: center;
+    margin-left: 30%;
+  }
+  #div1 > #img2{
+    display: flex;
+    justify-content: center;
+    margin-left: 30%;
+    padding: 15px;
+  }

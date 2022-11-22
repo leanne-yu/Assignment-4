@@ -1,0 +1,41 @@
+<script setup>
+  import { ref } from "vue"
+  const movie = ref("null")
+</script>
+
+<template>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titan One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+</head>
+<body>
+    <div class="container">
+    <div class="header">Pick A Movie!</div>
+    <div class="select">
+        <select name="Movies" id="Movies">
+            <option value = "164">Breakfast at Tiffany's</option>
+            <option value = "718930">Bullet Train</option>
+            <option value = "337404">Cruella</option>
+            <option value = "545611">Everything Everywhere All at Once</option>
+            <option value = "13">Forrest Gump</option>
+            <option value = "644495">House of Gucci</option>
+            <option value = "402900">Ocean's Eight</option>
+            <option value = "496243">Parasite</option>
+            <option value = "2109">Rush Hour</option>
+            <option value = "129">Spirited Away</option>
+        </select>
+        <input id=get type="button" value="Get">
+    </div>
+        <div id="div1"></div>
+    </div>
+</body>
+</template>
+
+<style scoped>
+</style>
