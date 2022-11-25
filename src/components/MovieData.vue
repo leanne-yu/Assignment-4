@@ -33,15 +33,16 @@ const getMovie = async () => {
   </select>
   <button @click="getMovie">get</button>
   <div v-if="response">
-    <img :src="`https://image.tmdb.org/t/p/w500/${response.poster_path}`" alt="" class="">
+    <h1>{{ response.original_title }}</h1>
+    <img :src="`https://image.tmdb.org/t/p/w500/${response.poster_path}`" alt="" class="img1">
     <p>Overview: {{ response.overview }}</p>
-    <p>Release Date: {{ response.releasedate }}</p>
+    <p>Release Date: {{ response.release_date }}</p>
     <p>Runtime: {{ response.runtime }}</p>
-    <p>Original Language: {{ response.originallanguage }}</p>
+    <p>Original Language: {{ response.original_language }}</p>
     <p>Popularity: {{ response.popularity }}</p>
-    <p>Vote Average: {{ response.voteaverage }}</p>
+    <p>Vote Average: {{ response.vote_average }}</p>
     <p>Budget: {{ response.budget }}</p>
-    <img :src="`https://image.tmdb.org/t/p/w500/${response.backdrop_path}`" alt="" class="">
+    <img :src="`https://image.tmdb.org/t/p/w500/${response.backdrop_path}`" alt="" class="img2">
   </div>
 </body>
 </template>
@@ -78,27 +79,32 @@ p {
   margin-right: 22%;
 }
 
-/* #select {
-  display: flex;
+select {
+  display: inline-block;
   text-align: center;
-  justify-content: center;
-  margin-left: 22%;
-  margin-right: 22%;
+  margin-left: 38%;
   font-family: "Lato", sans-serif, system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: rgb(127, 125, 255);
-  font-size: 18px;
+  font-size: 16px;
 }
 
-/* #div1>#img1 {
+button {
+  display: inline-block;
+  margin-left: 0.3%;
+  color: rgb(127, 125, 255);
+  font-size: 16px;
+}
+
+.img1 {
   display: flex;
   justify-content: center;
   margin-left: 30%;
 }
 
-#div1>#img2 {
+.img2 {
   display: flex;
   justify-content: center;
   margin-left: 30%;
   padding: 15px;
-} */
+}
 </style>
