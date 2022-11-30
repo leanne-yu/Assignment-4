@@ -17,38 +17,37 @@ const getMovie = async () => {
 </script>
 
 <template>
-<body>
-  <div class="header">Pick A Movie!</div>
-  <select v-model="movie">
-    <option value="164">Breakfast at Tiffany's</option>
-    <option value="718930">Bullet Train</option>
-    <option value="337404">Cruella</option>
-    <option value="545611">Everything Everywhere All at Once</option>
-    <option value="13">Forrest Gump</option>
-    <option value="644495">House of Gucci</option>
-    <option value="402900">Ocean's Eight</option>
-    <option value="496243">Parasite</option>
-    <option value="2109">Rush Hour</option>
-    <option value="129">Spirited Away</option>
-  </select>
-  <button @click="getMovie">get</button>
-  <div v-if="response">
-    <h1>{{ response.original_title }}</h1>
-    <img :src="`https://image.tmdb.org/t/p/w500/${response.poster_path}`" alt="" class="img1">
-    <p>Overview: {{ response.overview }}</p>
-    <p>Release Date: {{ response.release_date }}</p>
-    <p>Runtime: {{ response.runtime }}</p>
-    <p>Original Language: {{ response.original_language }}</p>
-    <p>Popularity: {{ response.popularity }}</p>
-    <p>Vote Average: {{ response.vote_average }}</p>
-    <p>Budget: {{ response.budget }}</p>
-    <img :src="`https://image.tmdb.org/t/p/w500/${response.backdrop_path}`" alt="" class="img2">
-  </div>
-</body>
+  <body>
+    <div class="header">Pick A Movie!</div>
+    <select v-model="movie">
+      <option value="164">Breakfast at Tiffany's</option>
+      <option value="718930">Bullet Train</option>
+      <option value="337404">Cruella</option>
+      <option value="545611">Everything Everywhere All at Once</option>
+      <option value="13">Forrest Gump</option>
+      <option value="644495">House of Gucci</option>
+      <option value="402900">Ocean's Eight</option>
+      <option value="496243">Parasite</option>
+      <option value="2109">Rush Hour</option>
+      <option value="129">Spirited Away</option>
+    </select>
+    <button @click="getMovie">get</button>
+    <div v-if="response">
+      <h1>{{ response.original_title }}</h1>
+      <img :src="`https://image.tmdb.org/t/p/w500/${response.poster_path}`" alt="" class="img1">
+      <p>Overview: {{ response.overview }}</p>
+      <p>Release Date: {{ response.release_date }}</p>
+      <p>Runtime: {{ response.runtime }}</p>
+      <p>Original Language: {{ response.original_language }}</p>
+      <p>Popularity: {{ response.popularity }}</p>
+      <p>Vote Average: {{ response.vote_average }}</p>
+      <p>Budget: {{ response.budget }}</p>
+      <img :src="`https://image.tmdb.org/t/p/w500/${response.backdrop_path}`" alt="" class="img2">
+    </div>
+  </body>
 </template>
 
 <style>
-
 body {
   background-color: rgb(213, 213, 255);
 }
